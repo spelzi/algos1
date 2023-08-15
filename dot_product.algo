@@ -1,0 +1,27 @@
+ALGORITHM dot_product
+    PROCEDURE: dot_product(vector1, vector2, n)
+        INPUT: vector1, vector2 (arrays representing vectors), n (number of pairs)
+        OUTPUT: None (updates dot_product_sum)
+
+        dot_product_sum := 0  // Initialize dot product sum
+
+        FOR i FROM 1 TO n DO
+            dot_product_sum := dot_product_sum + vector1[i] * vector2[i]
+        END FOR
+
+        RETURN dot_product_sum  // Return the dot product sum
+    END PROCEDURE
+
+ALGORITHM determine_orthogonal_vectors
+    INPUT: n (number of pairs), vector1, vector2 (arrays representing vectors)
+    OUTPUT: orthogonal (array of Boolean values indicating orthogonality)
+
+    DECLARE orthogonal[n]  // Initialize an array to store orthogonality results
+
+    FOR i FROM 1 TO n DO
+        dot_product_result := dot_product(vector1[i], vector2[i], length(vector1[i]))
+        orthogonal[i] := (dot_product_result = 0)  // Check if dot product is zero
+    END FOR
+
+    RETURN orthogonal  // Return the array of orthogonality results
+END ALGORITHM

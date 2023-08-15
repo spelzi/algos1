@@ -1,0 +1,24 @@
+ALGORITHM find_distinct_sum
+    INPUT: set1, set2 (two arrays containing elements)
+    OUTPUT: distinct_sum (sum of distinct elements from both sets)
+
+    distinct_sum := 0  // Initialize the sum of distinct elements.
+
+    // Iterate through each element in set1.
+    FOR each element in set1 DO
+        // If the element is not present in set2, add it to the distinct_sum.
+        IF element NOT IN set2 THEN
+            distinct_sum := distinct_sum + element
+        END IF
+    END FOR
+
+    // Iterate through each element in set2.
+    FOR each element in set2 DO
+        // If the element is not present in set1, add it to the distinct_sum.
+        IF element NOT IN set1 THEN
+            distinct_sum := distinct_sum + element
+        END IF
+    END FOR
+
+    RETURN distinct_sum  // Return the calculated sum of distinct elements.
+END ALGORITHM
