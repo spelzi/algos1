@@ -44,9 +44,3 @@ orthogonal = determine_orthogonal_vectors(n, vector1, vector2)
 # Print the result
 print("Orthogonality results:", orthogonal)
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://twitter.com/st_manuel" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="st_manuel" height="30" width="40" /></a>
-<a href="https://linkedin.com/in/emmanuel-chidiebube-uzor" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="emmanuel-chidiebube-uzor" height="30" width="40" /></a>
-<a href="https://instagram.com/st_manuel" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="st_manuel" height="30" width="40" /></a>
-</p>
